@@ -7,8 +7,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+
         snake: resolve(__dirname, 'projects/personal/snake/index.html'),
         mww: resolve(__dirname, 'projects/personal/mwwmp305/index.html'),
+        ascii: resolve(__dirname, 'projects/personal/ascii_paint/index.html'),
+
+        bingo: resolve(__dirname, 'projects/laboral/bingo/index.html'),
       },
     },
   },

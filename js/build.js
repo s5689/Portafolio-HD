@@ -41,7 +41,7 @@ export function buildList() {
       currentHTML.classList.add('list-item');
       currentHTML.innerHTML = `
         <div class="item-thumb">
-          <img src='${img.path}' />
+          <img src='${img.path}' draggable="false" />
         </div>
         
         <div class='item-text'>
@@ -95,7 +95,7 @@ export function buildProjects() {
     currentHTML.classList.add('project-item');
     currentHTML.innerHTML = `
       <div class='project-preview'>
-        <img src='${value.route}/preview.png' />
+        <img src='${value.route}/preview.png' draggable="false" />
         <h1>Ir al Proyecto</h1>
       </div>
         
