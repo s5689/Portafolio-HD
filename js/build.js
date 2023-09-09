@@ -25,6 +25,10 @@ export function buildList() {
       name: 'bag',
       path: './assets/portafolio.svg',
     },
+    {
+      name: 'calculator',
+      path: './assets/calculator.svg',
+    },
   ];
 
   generate(pp_data, pp_html);
@@ -159,6 +163,10 @@ function previewEvents() {
 
   // Redireccionar a los proyectos
   function goto(e) {
-    window.location.href = `${projects[e].route}/index.html`;
+    $('#app').style.opacity = 0;
+
+    setTimeout(() => {
+      window.location.href = `${projects[e].route}/index.html`;
+    }, 500);
   }
 }

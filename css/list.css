@@ -3,13 +3,44 @@
   top: 0;
   left: 0;
 
-  width: 300px;
+  width: 310px;
   height: 100vh;
-  border-right: 1px solid white;
 
-  overflow: scroll;
+  overflow-x: hidden;
+  border-right: 1px dashed rgb(140, 140, 140);
+  border-radius: 0 10px 10px 0;
 }
 
+/* Scrollbar */
+#list::-webkit-scrollbar {
+  width: 10px;
+}
+
+#list::-webkit-scrollbar-track {
+  border-top: 1px dashed rgb(140, 140, 140);
+  border-bottom: 1px dashed rgb(140, 140, 140);
+  border-left: 1px dashed rgb(140, 140, 140);
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(30, 30, 30);
+}
+
+#list::-webkit-scrollbar-thumb {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(60, 60, 60);
+}
+
+#list::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+#list::-webkit-scrollbar-thumb:active {
+  background-color: rgb(110, 110, 110);
+}
+
+/* List */
 #list .list-title {
   text-align: center;
   margin: 0;
