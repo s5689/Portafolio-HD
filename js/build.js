@@ -110,7 +110,6 @@ export function buildProjects() {
       </div>
     `;
 
-    console.log(value);
     projectsHTML.appendChild(currentHTML);
   });
 
