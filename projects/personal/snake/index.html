@@ -172,7 +172,7 @@
     //Gameovers
     {
       name: 'desintegrated',
-      url: 'https://media.tenor.com/-wrmUJrUbeoAAAAd/emoji-disintergrating.gif',
+      url: 'https://media.tenor.com/UlIwB2YVcGwAAAAC/waah-waa.gif',
     },
     {
       name: 'penguin_explode',
@@ -213,7 +213,7 @@
     },
     {
       name: 'flowercat',
-      url: 'https://media.tenor.com/BmGGGbZgE3IAAAAd/omg-wtf.gif',
+      url: 'https://media.tenor.com/I5T7Qm-d6HwAAAAC/cat-cats.gif',
     },
     {
       name: 'hardparty',
@@ -905,7 +905,23 @@
   }
 </style>
 
-<div id="goBack" onclick="document.location.href = '/?prev=0'">
+<script>
+  function goMenu(e) {
+    const div = document.querySelector('body');
+
+    div.style.transition = 'opacity 500ms';
+
+    setTimeout(() => {
+      div.style.opacity = 0;
+    }, 100);
+
+    setTimeout(() => {
+      document.location.href = `/?prev=${e}`;
+    }, 600);
+  }
+</script>
+
+<div id="goBack" onclick="goMenu(0)">
   <img src="/assets/arrow.gif" />
   <p>Volver al Portafolio</p>
 </div>

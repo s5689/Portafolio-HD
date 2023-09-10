@@ -39,9 +39,11 @@ export const pp_data = [
     short_desc: 'Portafolio Personal <br/><del>(No es precisamente HD)</del>',
     tech: 'HTML5, CSS, JavaScript y Muchos Proyectos.',
     reason: `
-      Esta aplicación, básicamente.<br/><br/>
-      <i>Mi Portafolio, la aplicación en la que estas, es un éxito de ventas en toda habla hispana.<br/>
-      Leelo. Sé, que te va a encantar.</i>
+      <i><del>Esta aplicación, básicamente.</del></i><br/><br/>
+      
+      La necesidad de crear una interfaz de uso simple y amigable trajo consigo el requerimiento brindar una navegación sencilla e intuitiva para los usuarios interesados en el portafolio, 
+      además de asegurar una estructura escalable y ampliable a futuros proyectos. Es decir, cuanta más experiencia laboral obtenga, más amplios serán los elementos de la lista. 
+      Ciertamente, es algo que te llena de <i>determinación</i>.
     `,
     route: './projects/personal/portafolio',
   },
